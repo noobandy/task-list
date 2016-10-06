@@ -1,9 +1,9 @@
-"use strict";
+'use strict'
 
-const path = require("path");
+const path = require('path')
 
-const config = require(path.join(__dirname, "../config/config"));
+const config = require(path.join(__dirname, '../config/config'))
 
-const MongoClient = require("mongodb").MongoClient;
+const MongoClient = require('mongodb').MongoClient
 
-module.exports =  MongoClient.connect(config.get("db:url"));
+module.exports = MongoClient.connect(config.get('db:url'))

@@ -1,64 +1,48 @@
-"use strict";
-const Q = require("q");
+'use strict'
+const Q = require('q')
 
-const User = function(db) {
+const User = function (db) {
+  this.db = db
+}
 
-	this.db = db;
-};
+User.prototype.findByUsername = function (username) {
+  let defered = Q.defer()
 
+  this.db.collection('users', {}, function (err, users) {
+    if (err) {
+      defered.reject(err)
+    } else {
+      users.find({username: username}).limit(1).next().then(function (foundUser) {
+        defered.resolve(foundUser)
+      })
+    }
+  })
 
-User.prototype.findByUsername = function(username) {
+  return defered.promise
+}
 
-	let defered = Q.defer();
+User.prototype.register = function (emailId, username, password) {
+  let defered = Q.defer()
 
-	this.db.collection("users", {}, function(err, users) {
-		
-		if(err) {
+  this.db.collection('users', {}, function (err, users) {
+    if (err) {
+      defered.reject(err)
+    } else {
+      let user = {
+        emailId: emailId,
+        username: username,
+        password: password
+      }
 
-			defered.reject(err);
-		} else {
+      users.insertOne(user).then(function (result) {
+        defered.resolve(result.ops)
+      }).catch(function (err) {
+        defered.reject(err)
+      })
+    }
+  })
 
-			users.find({username: username}).limit(1).next().then(function(foundUser) {
+  return defered.promise
+}
 
-				defered.resolve(foundUser);
-			});
-		}
-	});
-
-	return defered.promise;
-};
-
-
-User.prototype.register = function(emailId, username, password) {
-
-	let defered = Q.defer();
-
-	this.db.collection("users", {}, function(err, users) {
-		
-		if(err) {
-
-			defered.reject(err);
-		} else {
-
-			let user = {
-				emailId: emailId,
-				username: username,
-				password: password
-			};
-
-			users.insertOne(user).then(function(result) {
-
-				defered.resolve(result.ops);
-			}).catch(function(err) {
-
-				defered.reject(err);
-			});
-		}
-	});
-
-	return defered.promise;
-};
-
-
-
-module.exports = User;
+module.exports = User

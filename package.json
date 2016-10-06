@@ -4,8 +4,8 @@
   "description": "Simple software that lets users create and manage a task list.",
   "main": "app.js",
   "scripts": {
-    "start": "set env=dev && node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "node node_modules\\standard\\bin\\cmd --fix | node node_modules\\snazzy\\bin\\cmd && node node_modules\\lab\\bin\\lab tests"
   },
   "keywords": [
     "task-list"
@@ -13,12 +13,13 @@
   "author": "Anand Mohan",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-standard": "^6.2.0",
-    "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-standard": "^2.0.1"
+    "code": "^4.0.0",
+    "lab": "^11.1.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.3.0"
   },
   "dependencies": {
+    "hapi": "^15.1.1",
     "mongodb": "^2.2.10",
     "nconf": "^0.8.4",
     "q": "^1.4.1"
