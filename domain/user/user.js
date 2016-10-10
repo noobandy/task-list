@@ -6,27 +6,29 @@ const User = function (db) {
 }
 
 User.prototype.findByUsername = function (username) {
-  let defered = Q.defer()
+  let deferred = Q.defer()
 
   this.db.collection('users', {}, function (err, users) {
     if (err) {
-      defered.reject(err)
+      deferred.reject(err)
     } else {
       users.find({username: username}).limit(1).next().then(function (foundUser) {
-        defered.resolve(foundUser)
+        deferred.resolve(foundUser)
+      }).catch(function (err) {
+        deferred.reject(err)
       })
     }
   })
 
-  return defered.promise
+  return deferred.promise
 }
 
 User.prototype.register = function (emailId, username, password) {
-  let defered = Q.defer()
+  let deferred = Q.defer()
 
   this.db.collection('users', {}, function (err, users) {
     if (err) {
-      defered.reject(err)
+      deferred.reject(err)
     } else {
       let user = {
         emailId: emailId,
@@ -35,14 +37,14 @@ User.prototype.register = function (emailId, username, password) {
       }
 
       users.insertOne(user).then(function (result) {
-        defered.resolve(result.ops)
+        deferred.resolve(result.ops)
       }).catch(function (err) {
-        defered.reject(err)
+        deferred.reject(err)
       })
     }
   })
 
-  return defered.promise
+  return deferred.promise
 }
 
 module.exports = User
