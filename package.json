@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "node node_modules\\standard\\bin\\cmd --fix | node node_modules\\snazzy\\bin\\cmd && node node_modules\\lab\\bin\\lab tests"
+    "lint": "node node_modules\\standard\\bin\\cmd --fix | node node_modules\\snazzy\\bin\\cmd",
+    "test": "node node_modules\\lab\\bin\\lab tests",
+    "test-cov-html": "node node_modules\\lab\\bin\\lab -r html -o coverage.html tests"
   },
   "keywords": [
     "task-list"
