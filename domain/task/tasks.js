@@ -1,7 +1,5 @@
 'use strict'
 
-const Q = require('q')
-
 const Task = function (db) {
   this.db = db
 }
@@ -23,20 +21,15 @@ Task.prototype.find = function (username, options) {
 }
 
 Task.prototype.create = function (task) {
-  let deferred = Q.defer()
-  this.db.collection('tasks', {}, function (err, tasks) {
-    if (err) {
-      deferred.reject(err)
-    } else {
-      tasks.insertOne(task).then(function (result) {
-        deferred.resolve(result.ops)
-      }).catch(function (err) {
-        deferred.reject(err)
-      })
-    }
+  return new Promise((resolve, reject) => {
+    this.db.collection('tasks', {}, (err, tasks) => {
+      if (err) {
+        reject(err)
+      } else {
+        tasks.insertOne(task).then((result) => resolve(result.ops)).catch((err) => reject(err))
+      }
+    })
   })
-
-  return deferred.promise
 }
 
 Task.prototype.update = function (task) {

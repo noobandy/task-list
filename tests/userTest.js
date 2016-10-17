@@ -6,8 +6,6 @@ const User = require(path.join(__dirname, '../domain/user/user'))
 
 const dal = require(path.join(__dirname, '../dal/dal'))
 
-
-
 dal.then(function (db) {
   let userSerive = new User(db)
 
