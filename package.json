@@ -21,6 +21,7 @@
     "standard": "^8.3.0"
   },
   "dependencies": {
+    "co": "^4.6.0",
     "hapi": "^15.1.1",
     "mongodb": "^2.2.10",
     "nconf": "^0.8.4"

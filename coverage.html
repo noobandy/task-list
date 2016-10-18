@@ -548,11 +548,11 @@
             <a href="#dal/dal.js"><span class="dirname">dal/</span><span class="basename">dal.js</span></a>
         </li>
         <li>
-            <span class="cov high">92.50</span>
+            <span class="cov high">91.43</span>
             <a href="#domain/task/tasks.js"><span class="dirname">domain/task/</span><span class="basename">tasks.js</span></a>
         </li>
         <li>
-            <span class="cov high">85.37</span>
+            <span class="cov high">81.25</span>
             <a href="#domain/user/user.js"><span class="dirname">domain/user/</span><span class="basename">user.js</span></a>
         </li>
         <li>
@@ -579,7 +579,7 @@
           <div class="failures">0</div>
           <div class="skipped">0</div>
           <div class="test-count">3</div>
-          <div class="duration">40</div>
+          <div class="duration">53</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -604,7 +604,7 @@
               <td class="test-title">returns true if db url is mongodb://localhost/task-list-test
                   
               </td>
-              <td class="test-duration">6</td>
+              <td class="test-duration">7</td>
           </tr>
           <tr class="show  success">
               <td class="test-id">2</td>
@@ -618,7 +618,7 @@
               <td class="test-title">tasks it should save new task to db
                   
               </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">3</td>
           </tr>
           </tbody>
       </table>
@@ -626,9 +626,9 @@
     </div>    <div id="coverage">
         <h1>Code Coverage Report</h1>
         <div class="stats high">
-            <div class="percentage">91.28%</div>
-            <div class="sloc">172</div>
-            <div class="hits">157</div>
+            <div class="percentage">90.51%</div>
+            <div class="sloc">158</div>
+            <div class="hits">143</div>
             <div class="misses">15</div>
         </div>
         <div id="files">
@@ -827,9 +827,9 @@
             <div class="file">
                 <h2 id="domain/task/tasks.js">domain/task/tasks.js</h2>
                 <div class="stats high">
-                    <div class="percentage">92.50%</div>
-                    <div class="sloc">40</div>
-                    <div class="hits">37</div>
+                    <div class="percentage">91.43%</div>
+                    <div class="sloc">35</div>
+                    <div class="hits">32</div>
                     <div class="misses">3</div>
                 </div>
                 <table>
@@ -858,103 +858,103 @@
                             <td class="line" data-tooltip>3</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">const Q &#x3D; require(&#x27;q&#x27;)</td>
+                            <td class="source">const Task &#x3D; function (db) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>4</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">  this.db &#x3D; db</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>5</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">const Task &#x3D; function (db) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>6</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  this.db &#x3D; db</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>7</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
+                            <td class="source">/*</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>8</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">options &#x3D; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>9</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">/*</td>
+                            <td class="source">page: page no.</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>10</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">options &#x3D; {</td>
+                            <td class="source">pageSize: no. of records per page</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>11</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">page: page no.</td>
+                            <td class="source">type: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>12</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">pageSize: no. of records per page</td>
+                            <td class="source">all: all tasks</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>13</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">type: {</td>
+                            <td class="source">completed: completed tasks only</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>14</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">all: all tasks</td>
+                            <td class="source">pendinf: pending task only</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>15</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">completed: completed tasks only</td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>16</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">pendinf: pending task only</td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
+                            <td class="source">*/</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>18</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>19</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">*/</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">Task.prototype.find &#x3D; function (username, options) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>20</td>
@@ -965,8 +965,8 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>21</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">Task.prototype.find &#x3D; function (username, options) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>22</td>
@@ -977,92 +977,92 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>23</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">Task.prototype.create &#x3D; function (task) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>24</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">  return new Promise((resolve, reject) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>25</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">Task.prototype.create &#x3D; function (task) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>26</td>
-                            <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  let deferred &#x3D; Q.defer()</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>27</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  this.db.collection(&#x27;tasks&#x27;, {}, function (err, tasks) {</td>
+                            <td class="source">    this.db.collection(&#x27;tasks&#x27;, {}, (err, tasks) &#x3D;&gt; {</td>
                         </tr>
                             <tr class="chunks">
-                                <td class="line" data-tooltip>28</td>
+                                <td class="line" data-tooltip>26</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
-                                <td class="source"><div>    if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
+                                <td class="source"><div>      if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
                             </tr>
                             <tr class="miss">
+                                <td class="line" data-tooltip>27</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>        reject(err)</td>
+                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>28</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      } else {</td>
+                        </tr>
+                            <tr class="chunks">
                                 <td class="line" data-tooltip>29</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
-                                <td class="source" data-tooltip>      deferred.reject(err)</td>
+                                <td class="source"><div>        tasks.insertOne(task).then((result) &#x3D;&gt; resolve(result.ops)).catch((err) &#x3D;&gt; </div><div class="miss never" data-tooltip>reject(err)</div><div>)</div></td>
                             </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>30</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    } else {</td>
+                            <td class="source">      }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>31</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">      tasks.insertOne(task).then(function (result) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    })</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>32</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        deferred.resolve(result.ops)</td>
+                            <td class="source">  })</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>33</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">      }).catch(function (err) {</td>
+                            <td class="source">}</td>
                         </tr>
-                            <tr class="chunks">
-                                <td class="line" data-tooltip>34</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source"><div>        </div><div class="miss never" data-tooltip>deferred.reject(err)</div></td>
-                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>34</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>35</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      })</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">Task.prototype.update &#x3D; function (task) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>36</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    }</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>37</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  })</td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>38</td>
@@ -1074,100 +1074,58 @@
                             <td class="line" data-tooltip>39</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">  return deferred.promise</td>
+                            <td class="source">Task.prototype.complete &#x3D; function (taskId) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>40</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>41</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>42</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">Task.prototype.update &#x3D; function (task) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>43</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>44</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>45</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>46</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">Task.prototype.complete &#x3D; function (taskId) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>47</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>48</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>49</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>50</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">Task.prototype.delete &#x3D; function (taskId) {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>51</td>
+                            <td class="line" data-tooltip>44</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>52</td>
+                            <td class="line" data-tooltip>45</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">}</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>53</td>
+                            <td class="line" data-tooltip>46</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>54</td>
+                            <td class="line" data-tooltip>47</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">module.exports &#x3D; Task</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>55</td>
+                            <td class="line" data-tooltip>48</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
@@ -1178,9 +1136,9 @@
             <div class="file">
                 <h2 id="domain/user/user.js">domain/user/user.js</h2>
                 <div class="stats high">
-                    <div class="percentage">85.37%</div>
-                    <div class="sloc">41</div>
-                    <div class="hits">35</div>
+                    <div class="percentage">81.25%</div>
+                    <div class="sloc">32</div>
+                    <div class="hits">26</div>
                     <div class="misses">6</div>
                 </div>
                 <table>
@@ -1203,298 +1161,214 @@
                             <td class="line" data-tooltip>2</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">const Q &#x3D; require(&#x27;q&#x27;)</td>
+                            <td class="source">const User &#x3D; function (db) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>3</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">  this.db &#x3D; db</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>4</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">const User &#x3D; function (db) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">}</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>5</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  this.db &#x3D; db</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>6</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>7</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>8</td>
+                            <td class="line" data-tooltip>6</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">User.prototype.findByUsername &#x3D; function (username) {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>9</td>
+                            <td class="line" data-tooltip>7</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  let deferred &#x3D; Q.defer()</td>
+                            <td class="source">  return new Promise((resolve, reject) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>10</td>
+                            <td class="line" data-tooltip>8</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    this.db.collection(&#x27;users&#x27;, {}, (err, users) &#x3D;&gt; {</td>
                         </tr>
+                            <tr class="chunks">
+                                <td class="line" data-tooltip>9</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source"><div>      if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>10</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>        reject(err)</td>
+                            </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>11</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  this.db.collection(&#x27;users&#x27;, {}, function (err, users) {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      } else {</td>
                         </tr>
                             <tr class="chunks">
                                 <td class="line" data-tooltip>12</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
-                                <td class="source"><div>    if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
-                            </tr>
-                            <tr class="miss">
-                                <td class="line" data-tooltip>13</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source" data-tooltip>      deferred.reject(err)</td>
+                                <td class="source"><div>        users.find({username: username}).limit(1).next().then((foundUser) &#x3D;&gt; resolve(foundUser)).catch((err) &#x3D;&gt; </div><div class="miss never" data-tooltip>reject(err)</div><div>)</div></td>
                             </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>14</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    } else {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>15</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">      users.find({username: username}).limit(1).next().then(function (foundUser) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>16</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        deferred.resolve(foundUser)</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>17</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      }).catch(function (err) {</td>
-                        </tr>
-                            <tr class="chunks">
-                                <td class="line" data-tooltip>18</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source"><div>        </div><div class="miss never" data-tooltip>deferred.reject(err)</div></td>
-                            </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>19</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      })</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>20</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    }</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>21</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">  })</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>22</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>23</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  return deferred.promise</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>24</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">}</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>25</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>26</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">User.prototype.register &#x3D; function (emailId, username, password) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>27</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">  let deferred &#x3D; Q.defer()</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>28</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>29</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  this.db.collection(&#x27;users&#x27;, {}, function (err, users) {</td>
-                        </tr>
-                            <tr class="chunks">
-                                <td class="line" data-tooltip>30</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source"><div>    if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
-                            </tr>
-                            <tr class="miss">
-                                <td class="line" data-tooltip>31</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source" data-tooltip>      deferred.reject(err)</td>
-                            </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>32</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    } else {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>33</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">      let user &#x3D; {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>34</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        emailId: emailId,</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>35</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        username: username,</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>36</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        password: password</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>37</td>
+                            <td class="line" data-tooltip>13</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">      }</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>38</td>
+                            <td class="line" data-tooltip>14</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    })</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>39</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">      users.insertOne(user).then(function (result) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>40</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        deferred.resolve(result.ops)</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>41</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      }).catch(function (err) {</td>
-                        </tr>
-                            <tr class="chunks">
-                                <td class="line" data-tooltip>42</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source"><div>        </div><div class="miss never" data-tooltip>deferred.reject(err)</div></td>
-                            </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>43</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      })</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>44</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    }</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>45</td>
+                            <td class="line" data-tooltip>15</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">  })</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>46</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>47</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  return deferred.promise</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>48</td>
+                            <td class="line" data-tooltip>16</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">}</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>49</td>
+                            <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>50</td>
+                            <td class="line" data-tooltip>18</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">User.prototype.register &#x3D; function (emailId, username, password) {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>19</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">  return new Promise((resolve, reject) &#x3D;&gt; {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>20</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    this.db.collection(&#x27;users&#x27;, {}, (err, users) &#x3D;&gt; {</td>
+                        </tr>
+                            <tr class="chunks">
+                                <td class="line" data-tooltip>21</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source"><div>      if (</div><div class="miss false" data-tooltip>err</div><div>) {</div></td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>22</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>        reject(err)</td>
+                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>23</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      } else {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>24</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">        let user &#x3D; {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>25</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">          emailId: emailId,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>26</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">          username: username,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>27</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">          password: password</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>28</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        }</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>29</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                            <tr class="chunks">
+                                <td class="line" data-tooltip>30</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source"><div>        users.insertOne(user).then((result) &#x3D;&gt; resolve(result.ops)).catch((err) &#x3D;&gt; </div><div class="miss never" data-tooltip>reject(err)</div><div>)</div></td>
+                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>31</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      }</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>32</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    })</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>33</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">  })</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>34</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">}</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>35</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>36</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">module.exports &#x3D; User</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>51</td>
+                            <td class="line" data-tooltip>37</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
@@ -2078,107 +1952,95 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>9</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">dal.then(function (db) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>10</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">  let userSerive &#x3D; new User(db)</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>11</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">dal.then(function (db) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>12</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">  let userSerive &#x3D; new User(db)</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>13</td>
-                            <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>14</td>
+                            <td class="line" data-tooltip>12</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">  userSerive.register(&#x27;anandm@mkcl.org&#x27;, &#x27;anandm123&#x27;, &#x27;anandm123&#x27;, &#x27;Anand Mohan&#x27;).then(function (result) {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>15</td>
+                            <td class="line" data-tooltip>13</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    console.log(result)</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>16</td>
+                            <td class="line" data-tooltip>14</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">  }).catch(function (err) {</td>
                         </tr>
                             <tr class="chunks">
-                                <td class="line" data-tooltip>17</td>
+                                <td class="line" data-tooltip>15</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
                                 <td class="source"><div>    </div><div class="miss never" data-tooltip>console.log(err)</div></td>
                             </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>18</td>
+                            <td class="line" data-tooltip>16</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">  })</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>19</td>
+                            <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>20</td>
+                            <td class="line" data-tooltip>18</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">  userSerive.findByUsername(&#x27;anandm123&#x27;).then(function (result) {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>21</td>
+                            <td class="line" data-tooltip>19</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    console.log(result)</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>22</td>
+                            <td class="line" data-tooltip>20</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">  }).catch(function (err) {</td>
                         </tr>
                             <tr class="chunks">
-                                <td class="line" data-tooltip>23</td>
+                                <td class="line" data-tooltip>21</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
                                 <td class="source"><div>    </div><div class="miss never" data-tooltip>console.log(err)</div></td>
                             </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>24</td>
+                            <td class="line" data-tooltip>22</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">  })</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>25</td>
+                            <td class="line" data-tooltip>23</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">})</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>26</td>
+                            <td class="line" data-tooltip>24</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
